@@ -1,0 +1,17 @@
+
+
+{% block content %}
+
+{% for message in messages %}
+{{ message }}
+{% endfor %}
+
+<center>
+    <h3> Bonjour, bienvenu sur le site </h3>
+    <br><br>
+    <button type="submit"><a href="/logout">Modifier mes informations</a></button>
+    <button type="submit"><a href="/login">Formulaire</a></button>
+</center>
+
+
+{% endblock %}

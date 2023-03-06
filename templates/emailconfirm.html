@@ -1,0 +1,7 @@
+{% autoescape off %}
+Bienvenu sur donald pro login system
+Bonjour {{ name }}
+Confirmer votre address en cliquant sur le lien suivant.
+
+lien: http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}
